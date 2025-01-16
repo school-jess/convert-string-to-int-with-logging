@@ -1,0 +1,15 @@
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\bin\Debug\net6.0\ConvUserInputToInt.exe
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\bin\Debug\net6.0\ConvUserInputToInt.deps.json
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\bin\Debug\net6.0\ConvUserInputToInt.runtimeconfig.json
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\bin\Debug\net6.0\ConvUserInputToInt.dll
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\bin\Debug\net6.0\ConvUserInputToInt.pdb
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.csproj.AssemblyReference.cache
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.AssemblyInfoInputs.cache
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.AssemblyInfo.cs
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.csproj.CoreCompileInputs.cache
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.dll
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\refint\ConvUserInputToInt.dll
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.pdb
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ConvUserInputToInt.genruntimeconfig.cache
+C:\Users\Student\jessevangelista\1styear\2ndsem\ConvUserInputToInt\ConvUserInputToInt\obj\Debug\net6.0\ref\ConvUserInputToInt.dll
