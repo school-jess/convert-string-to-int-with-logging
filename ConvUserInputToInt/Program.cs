@@ -9,7 +9,7 @@ namespace ConvuserInputToInt
         {
             using ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole());
             Ilogger logger = factory.CreateLogger("Program");
-            logger.LogInformation("Hello world! Logging is {Description}.", "fun");
+            // logger.LogInformation("Hello world! Logging is {Description}.", "fun");
             bool wantToExit = false;
             while (!wantToExit)
             {
