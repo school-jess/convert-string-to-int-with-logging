@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Microsoft.Extensions.Logging;
+using Serilog;
 
 namespace ConvuserInputToInt
 {
@@ -7,9 +7,11 @@ namespace ConvuserInputToInt
     {
         static void Main()
         {
-            using ILoggerFactory factory = LoggerFactory.Create(builder => builder.AddConsole());
-            ILogger logger = factory.CreateLogger("Program");
-            logger.LogInformation("Hello world! Logging is {Description}.", "fun");
+            var logger = new LoggerConfiguration()
+                .MinimumLevel.Debug()
+                .WriteTo.File("logs.txt", outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}")
+                .CreateLogger();
+            logger.Information("started application");
             bool wantToExit = false;
             while (!wantToExit)
             {
@@ -18,10 +20,12 @@ namespace ConvuserInputToInt
                 try
                 {
                     int num = Convert.ToInt32(Console.ReadLine());
+                    logger.Information("succesful given int");
                     Console.WriteLine($"Inputted number is {num}");
                 }
                 catch
                 {
+                    logger.Error("got error");
                     Console.WriteLine("Pls. input a number");
                 }
                 ConsoleKey tryAgain = ConsoleKey.A;
@@ -43,6 +47,8 @@ namespace ConvuserInputToInt
             }
             Console.WriteLine();
             Console.WriteLine("Goodbye!");
+            logger.Information("Ended application");
+            logger.Dispose();
         }
     }
 }
