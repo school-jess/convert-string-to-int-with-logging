@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Serilog;
+using System;
 
 namespace ConvuserInputToInt
 {
@@ -11,7 +12,7 @@ namespace ConvuserInputToInt
                 .MinimumLevel.Debug()
                 .WriteTo.File("logs.txt", outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff} [{Level}] {Message}{NewLine}{Exception}")
                 .CreateLogger();
-            logger.Information("started application");
+            logger.Debug("started application");
             bool wantToExit = false;
             while (!wantToExit)
             {
@@ -20,13 +21,16 @@ namespace ConvuserInputToInt
                 try
                 {
                     int num = Convert.ToInt32(Console.ReadLine());
-                    logger.Information("succesful given int");
+                    logger.Information($"succesful given int: {num}");
                     Console.WriteLine($"Inputted number is {num}");
                 }
-                catch
+                catch (FormatException)
                 {
-                    logger.Error("got error");
+                    logger.Error("input was a character");
                     Console.WriteLine("Pls. input a number");
+                } catch (OverflowException) {
+                    logger.Error("input was too big.");
+                    Console.WriteLine("input was to big");
                 }
                 ConsoleKey tryAgain = ConsoleKey.A;
                 while (tryAgain != ConsoleKey.Y || tryAgain != ConsoleKey.N)
@@ -47,7 +51,7 @@ namespace ConvuserInputToInt
             }
             Console.WriteLine();
             Console.WriteLine("Goodbye!");
-            logger.Information("Ended application");
+            logger.Debug("Ended application");
             logger.Dispose();
         }
     }
